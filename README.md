@@ -8,7 +8,7 @@ MongoDB
 2. Visit URL 'http://localhost:8080'.  
 
 # Solution Overview  
--Store URL different parts such as path, query parameters as shown below figure.  
+-Store URL different parts such as path, query parameters as shown below.  
 ![alt text](https://github.com/alfazjikani/url-lookup-app/blob/main/product-mongo-collection.png?raw=true)  
 
 -If exact match isn't found, then search any match of path or query parameter.  
