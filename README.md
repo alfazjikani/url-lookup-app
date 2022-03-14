@@ -1,5 +1,3 @@
-# URL Lookup Application  
-
 # Technology
 Java 11  
 Spring Boot  
