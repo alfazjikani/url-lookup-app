@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URL Lookup Application</title>
+		<style>
+			.search-section {
+				padding: 20px;
+			}
+			.search-section input {
+				width: 300px;
+    			height: 25px;
+			}
+			.search-section button {
+				margin-left: 10px;
+   				padding: 7px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="search-section">
+			<input type="text" id="search" name="search" />
+			<button type="button" onclick="submit()">Submit</button>
+			<br/>
+			<br/>
+			<b>Output:</b> <span id="output"></span>
+		</div>
+
+		<script>
+			const API_URL = "product/lookup-url"
+			function submit() {
+				const search = document.querySelector("#search").value;
+				const url = new URL(location.href + API_URL);
+				url.searchParams.append("search", search);
+
+				fetch(url).then(res => res.text())
+				.then(data => {
+					document.querySelector("#output").innerHTML = data;
+				});
+			}
+		</script>
+	</body>
+</html>
