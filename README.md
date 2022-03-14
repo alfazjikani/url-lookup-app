@@ -9,6 +9,7 @@ MongoDB
 
 # Solution Overview  
 -Store URL different parts such as path, query parameters as shown below figure.  
+![alt text](https://github.com/alfazjikani/url-lookup-app/blob/main/product-mongo-collection.png?raw=true)  
 
 -If exact match isn't found, then search any match of path or query parameter.  
 PATH1='product' OR tag='1234' OR tag='5678'  
